@@ -104,15 +104,15 @@ export default class About extends Component {
                         just use the contact form on this page and you can reach
                         me directly!
                       </p>
-                      <p>
+                      {/* <p>
                         <a href='https://something' className='link'>
                           Click here for a list of stuff I'm using.
                         </a>
-                      </p>
+                      </p> */}
                     </div>
                     <div className='action-container'>
                       <a
-                        href='https://something'
+                        href='https://drive.google.com/drive/folders/1R_dtJevQtmHN7kxPDExtsPhNXTF0GWPh?usp=sharing'
                         className='btn ghost-button ghost-teal'
                       >
                         Download CV & Cerificates
