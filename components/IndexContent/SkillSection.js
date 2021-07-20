@@ -120,7 +120,7 @@ export default class SkillSection extends Component {
             </div>
           </div>
           <div className='row mb-3'>
-            <div
+            {/* <div
               className={`col-md-12 text-center ${
                 this.props.isPages ? "hidden" : "show"
               } `}
@@ -130,7 +130,7 @@ export default class SkillSection extends Component {
                   View More About My Skill
                 </a>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

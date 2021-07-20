@@ -312,11 +312,11 @@ h3.section-title::after {
     object-position: center;
 }
 .project-caption {
-    width: 90%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 15px;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,6 +413,7 @@ h3.section-title::after {
     font-weight: 700;
     text-transform: uppercase;
     transition: all .5s ease-in-out;
+    color: #000;
 }
 .project-gallery .nav-tabs .nav-link.active, .project-gallery .nav-tabs .nav-link:hover {
     color: #47ada3;
@@ -541,4 +542,65 @@ h3.section-title::after {
     position: absolute;
     top: -190px;
     opacity: 0.2;
+}
+
+.custom-tooltip {
+  position:relative; /* making the .tooltip span a container for the tooltip text */
+  border-bottom:1px dashed #000; /* little indicater to indicate it's hoverable */
+}
+
+.custom-tooltip:after {
+  content: "";
+  position:absolute;
+  
+  /* position tooltip correctly */
+  left:100%;
+  margin-left:-5px;
+ 
+  /* vertically center */
+  top:50%;
+  transform:translateY(-50%);
+ 
+  /* the arrow */
+  border:10px solid #000;
+  border-color: transparent black transparent transparent;
+  
+  display:none;
+}
+.custom-tooltip:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 102%;
+    /* transform: translateY(-50%); */
+    /* left: 100%; */
+    /* margin-left: 15px; */
+    /* width: 200px; */
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0;
+    transition: .3s;
+}
+
+.custom-tooltip:hover:before {
+  display:block;
+}
+
+.custom-tooltip:hover:before, .tooltip:hover:after {
+  display:block;
+  opacity: 1;
+  z-index: 9999;
+}
+
+.custom-tooltip:before {
+  /* other styles */
+
+  /*  display:none; */
+
+  opacity:0;
+  transition:.3s opacity;   
 }

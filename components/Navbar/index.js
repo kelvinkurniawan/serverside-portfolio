@@ -121,11 +121,11 @@ export default class MyNavbar extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <Link href='/blog'>
-                  <NavLink>Blog</NavLink>
+                <Link href='/about#email'>
+                  <NavLink>Contact Me</NavLink>
                 </Link>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
+              {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Hire Me
                 </DropdownToggle>
@@ -135,7 +135,7 @@ export default class MyNavbar extends React.Component {
                   <DropdownItem divider />
                   <DropdownItem>Meet Me</DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
             </Nav>
           </Collapse>
         </Navbar>
