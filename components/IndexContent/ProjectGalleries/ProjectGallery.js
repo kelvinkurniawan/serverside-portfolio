@@ -3,7 +3,7 @@ import Portfolio from "../../../src/images/Portofolio-project.png";
 import SistemPakar from "../../../src/images/sistem-pakar-project.png";
 import Puinter from "../../../src/images/puinter-project.png";
 import TODProject from "../../../src/images/Tod-project.png";
-import WarungCrypto from "../../../src/images/WarungCrypto.png";
+import WarungCrypto from "../../../src/images/warungcrypto.png";
 import HazardReport from "../../../src/images/hazardreport.png";
 
 export default class ProjectGallery extends Component {
